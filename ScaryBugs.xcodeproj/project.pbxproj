@@ -12,6 +12,32 @@
 		E26F13861D42603A00207B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F13841D42603A00207B3A /* Main.storyboard */; };
 		E26F13881D42603A00207B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26F13871D42603A00207B3A /* Assets.xcassets */; };
 		E26F138B1D42603A00207B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F13891D42603A00207B3A /* LaunchScreen.storyboard */; };
+		E26F13AD1D42628900207B3A /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = E26F13931D42628900207B3A /* attribution.txt */; };
+		E26F13AE1D42628900207B3A /* bee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13941D42628900207B3A /* bee.jpg */; };
+		E26F13AF1D42628900207B3A /* beetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13951D42628900207B3A /* beetle.jpg */; };
+		E26F13B01D42628900207B3A /* burritoInsect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13961D42628900207B3A /* burritoInsect.jpg */; };
+		E26F13B11D42628900207B3A /* caterpillar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13971D42628900207B3A /* caterpillar.jpg */; };
+		E26F13B21D42628900207B3A /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13981D42628900207B3A /* centipede.jpg */; };
+		E26F13B31D42628900207B3A /* cicada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13991D42628900207B3A /* cicada.jpg */; };
+		E26F13B41D42628900207B3A /* cockroach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139A1D42628900207B3A /* cockroach.jpg */; };
+		E26F13B51D42628900207B3A /* exoskeleton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139B1D42628900207B3A /* exoskeleton.jpg */; };
+		E26F13B61D42628900207B3A /* fly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139C1D42628900207B3A /* fly.jpg */; };
+		E26F13B71D42628900207B3A /* giantMoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139D1D42628900207B3A /* giantMoth.jpg */; };
+		E26F13B81D42628900207B3A /* grasshopper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139E1D42628900207B3A /* grasshopper.jpg */; };
+		E26F13B91D42628900207B3A /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F139F1D42628900207B3A /* ladybug.jpg */; };
+		E26F13BA1D42628900207B3A /* mosquito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A01D42628900207B3A /* mosquito.jpg */; };
+		E26F13BB1D42628900207B3A /* potatoBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A11D42628900207B3A /* potatoBug.jpg */; };
+		E26F13BC1D42628900207B3A /* prayingMantis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A21D42628900207B3A /* prayingMantis.jpg */; };
+		E26F13BD1D42628900207B3A /* roach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A31D42628900207B3A /* roach.jpg */; };
+		E26F13BE1D42628900207B3A /* robberFly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A41D42628900207B3A /* robberFly.jpg */; };
+		E26F13BF1D42628900207B3A /* ScaryBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F13A51D42628900207B3A /* ScaryBug.swift */; };
+		E26F13C01D42628900207B3A /* scorpion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A61D42628900207B3A /* scorpion.jpg */; };
+		E26F13C11D42628900207B3A /* shieldBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A71D42628900207B3A /* shieldBug.jpg */; };
+		E26F13C21D42628900207B3A /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A81D42628900207B3A /* shockedface2_empty.png */; };
+		E26F13C31D42628900207B3A /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = E26F13A91D42628900207B3A /* shockedface2_full.png */; };
+		E26F13C41D42628900207B3A /* stagBeetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13AA1D42628900207B3A /* stagBeetle.jpg */; };
+		E26F13C51D42628900207B3A /* stinkbug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13AB1D42628900207B3A /* stinkbug.jpg */; };
+		E26F13C61D42628900207B3A /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13AC1D42628900207B3A /* wolfSpider.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +48,32 @@
 		E26F13871D42603A00207B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26F138A1D42603A00207B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26F138C1D42603A00207B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26F13931D42628900207B3A /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
+		E26F13941D42628900207B3A /* bee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bee.jpg; sourceTree = "<group>"; };
+		E26F13951D42628900207B3A /* beetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beetle.jpg; sourceTree = "<group>"; };
+		E26F13961D42628900207B3A /* burritoInsect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burritoInsect.jpg; sourceTree = "<group>"; };
+		E26F13971D42628900207B3A /* caterpillar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caterpillar.jpg; sourceTree = "<group>"; };
+		E26F13981D42628900207B3A /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipede.jpg; sourceTree = "<group>"; };
+		E26F13991D42628900207B3A /* cicada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicada.jpg; sourceTree = "<group>"; };
+		E26F139A1D42628900207B3A /* cockroach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cockroach.jpg; sourceTree = "<group>"; };
+		E26F139B1D42628900207B3A /* exoskeleton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exoskeleton.jpg; sourceTree = "<group>"; };
+		E26F139C1D42628900207B3A /* fly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fly.jpg; sourceTree = "<group>"; };
+		E26F139D1D42628900207B3A /* giantMoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giantMoth.jpg; sourceTree = "<group>"; };
+		E26F139E1D42628900207B3A /* grasshopper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grasshopper.jpg; sourceTree = "<group>"; };
+		E26F139F1D42628900207B3A /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybug.jpg; sourceTree = "<group>"; };
+		E26F13A01D42628900207B3A /* mosquito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mosquito.jpg; sourceTree = "<group>"; };
+		E26F13A11D42628900207B3A /* potatoBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBug.jpg; sourceTree = "<group>"; };
+		E26F13A21D42628900207B3A /* prayingMantis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayingMantis.jpg; sourceTree = "<group>"; };
+		E26F13A31D42628900207B3A /* roach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roach.jpg; sourceTree = "<group>"; };
+		E26F13A41D42628900207B3A /* robberFly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robberFly.jpg; sourceTree = "<group>"; };
+		E26F13A51D42628900207B3A /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBug.swift; sourceTree = "<group>"; };
+		E26F13A61D42628900207B3A /* scorpion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scorpion.jpg; sourceTree = "<group>"; };
+		E26F13A71D42628900207B3A /* shieldBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shieldBug.jpg; sourceTree = "<group>"; };
+		E26F13A81D42628900207B3A /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		E26F13A91D42628900207B3A /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		E26F13AA1D42628900207B3A /* stagBeetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stagBeetle.jpg; sourceTree = "<group>"; };
+		E26F13AB1D42628900207B3A /* stinkbug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stinkbug.jpg; sourceTree = "<group>"; };
+		E26F13AC1D42628900207B3A /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +109,45 @@
 				E26F13801D42603A00207B3A /* AppDelegate.swift */,
 				E26F13821D42603A00207B3A /* ViewController.swift */,
 				E26F13841D42603A00207B3A /* Main.storyboard */,
+				E26F13921D42628900207B3A /* Icons */,
 				E26F13871D42603A00207B3A /* Assets.xcassets */,
 				E26F13891D42603A00207B3A /* LaunchScreen.storyboard */,
 				E26F138C1D42603A00207B3A /* Info.plist */,
 			);
 			path = ScaryBugs;
+			sourceTree = "<group>";
+		};
+		E26F13921D42628900207B3A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				E26F13931D42628900207B3A /* attribution.txt */,
+				E26F13941D42628900207B3A /* bee.jpg */,
+				E26F13951D42628900207B3A /* beetle.jpg */,
+				E26F13961D42628900207B3A /* burritoInsect.jpg */,
+				E26F13971D42628900207B3A /* caterpillar.jpg */,
+				E26F13981D42628900207B3A /* centipede.jpg */,
+				E26F13991D42628900207B3A /* cicada.jpg */,
+				E26F139A1D42628900207B3A /* cockroach.jpg */,
+				E26F139B1D42628900207B3A /* exoskeleton.jpg */,
+				E26F139C1D42628900207B3A /* fly.jpg */,
+				E26F139D1D42628900207B3A /* giantMoth.jpg */,
+				E26F139E1D42628900207B3A /* grasshopper.jpg */,
+				E26F139F1D42628900207B3A /* ladybug.jpg */,
+				E26F13A01D42628900207B3A /* mosquito.jpg */,
+				E26F13A11D42628900207B3A /* potatoBug.jpg */,
+				E26F13A21D42628900207B3A /* prayingMantis.jpg */,
+				E26F13A31D42628900207B3A /* roach.jpg */,
+				E26F13A41D42628900207B3A /* robberFly.jpg */,
+				E26F13A51D42628900207B3A /* ScaryBug.swift */,
+				E26F13A61D42628900207B3A /* scorpion.jpg */,
+				E26F13A71D42628900207B3A /* shieldBug.jpg */,
+				E26F13A81D42628900207B3A /* shockedface2_empty.png */,
+				E26F13A91D42628900207B3A /* shockedface2_full.png */,
+				E26F13AA1D42628900207B3A /* stagBeetle.jpg */,
+				E26F13AB1D42628900207B3A /* stinkbug.jpg */,
+				E26F13AC1D42628900207B3A /* wolfSpider.jpg */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +209,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26F13C11D42628900207B3A /* shieldBug.jpg in Resources */,
+				E26F13C21D42628900207B3A /* shockedface2_empty.png in Resources */,
 				E26F138B1D42603A00207B3A /* LaunchScreen.storyboard in Resources */,
+				E26F13B81D42628900207B3A /* grasshopper.jpg in Resources */,
+				E26F13B91D42628900207B3A /* ladybug.jpg in Resources */,
+				E26F13B11D42628900207B3A /* caterpillar.jpg in Resources */,
+				E26F13C01D42628900207B3A /* scorpion.jpg in Resources */,
+				E26F13BE1D42628900207B3A /* robberFly.jpg in Resources */,
+				E26F13AE1D42628900207B3A /* bee.jpg in Resources */,
+				E26F13AF1D42628900207B3A /* beetle.jpg in Resources */,
 				E26F13881D42603A00207B3A /* Assets.xcassets in Resources */,
+				E26F13AD1D42628900207B3A /* attribution.txt in Resources */,
+				E26F13C31D42628900207B3A /* shockedface2_full.png in Resources */,
+				E26F13B21D42628900207B3A /* centipede.jpg in Resources */,
+				E26F13BD1D42628900207B3A /* roach.jpg in Resources */,
+				E26F13C51D42628900207B3A /* stinkbug.jpg in Resources */,
+				E26F13B51D42628900207B3A /* exoskeleton.jpg in Resources */,
+				E26F13BA1D42628900207B3A /* mosquito.jpg in Resources */,
+				E26F13BC1D42628900207B3A /* prayingMantis.jpg in Resources */,
+				E26F13B01D42628900207B3A /* burritoInsect.jpg in Resources */,
+				E26F13C61D42628900207B3A /* wolfSpider.jpg in Resources */,
+				E26F13B41D42628900207B3A /* cockroach.jpg in Resources */,
+				E26F13B31D42628900207B3A /* cicada.jpg in Resources */,
+				E26F13B71D42628900207B3A /* giantMoth.jpg in Resources */,
+				E26F13B61D42628900207B3A /* fly.jpg in Resources */,
 				E26F13861D42603A00207B3A /* Main.storyboard in Resources */,
+				E26F13BB1D42628900207B3A /* potatoBug.jpg in Resources */,
+				E26F13C41D42628900207B3A /* stagBeetle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +249,7 @@
 			files = (
 				E26F13831D42603A00207B3A /* ViewController.swift in Sources */,
 				E26F13811D42603A00207B3A /* AppDelegate.swift in Sources */,
+				E26F13BF1D42628900207B3A /* ScaryBug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +405,7 @@
 				E26F13911D42603A00207B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
