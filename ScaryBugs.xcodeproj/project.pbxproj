@@ -120,6 +120,7 @@
 		E26F13921D42628900207B3A /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				E26F13A51D42628900207B3A /* ScaryBug.swift */,
 				E26F13931D42628900207B3A /* attribution.txt */,
 				E26F13941D42628900207B3A /* bee.jpg */,
 				E26F13951D42628900207B3A /* beetle.jpg */,
@@ -138,7 +139,6 @@
 				E26F13A21D42628900207B3A /* prayingMantis.jpg */,
 				E26F13A31D42628900207B3A /* roach.jpg */,
 				E26F13A41D42628900207B3A /* robberFly.jpg */,
-				E26F13A51D42628900207B3A /* ScaryBug.swift */,
 				E26F13A61D42628900207B3A /* scorpion.jpg */,
 				E26F13A71D42628900207B3A /* shieldBug.jpg */,
 				E26F13A81D42628900207B3A /* shockedface2_empty.png */,
