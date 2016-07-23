@@ -30,5 +30,17 @@ extension ViewController: UITableViewDataSource {
         
         return  bugs.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
+        let bug = bugs[indexPath.row]
+        cell.textLabel?.text = bug.name
+        cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
+        if let imageView = cell.imageView, bugImage = bug.image {
+            imageView.image = bugImage
+        }
+        return cell
+    }
 }
 
