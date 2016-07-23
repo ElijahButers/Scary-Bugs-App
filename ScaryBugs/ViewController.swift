@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var bugs = [ScaryBug]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        bugs = ScaryBug.bugs()
     }
 
     override func didReceiveMemoryWarning() {
