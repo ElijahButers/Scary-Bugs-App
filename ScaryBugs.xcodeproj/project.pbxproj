@@ -66,7 +66,7 @@
 		E26F13A21D42628900207B3A /* prayingMantis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayingMantis.jpg; sourceTree = "<group>"; };
 		E26F13A31D42628900207B3A /* roach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roach.jpg; sourceTree = "<group>"; };
 		E26F13A41D42628900207B3A /* robberFly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robberFly.jpg; sourceTree = "<group>"; };
-		E26F13A51D42628900207B3A /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBug.swift; sourceTree = "<group>"; };
+		E26F13A51D42628900207B3A /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaryBug.swift; path = Icons/ScaryBug.swift; sourceTree = "<group>"; };
 		E26F13A61D42628900207B3A /* scorpion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scorpion.jpg; sourceTree = "<group>"; };
 		E26F13A71D42628900207B3A /* shieldBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shieldBug.jpg; sourceTree = "<group>"; };
 		E26F13A81D42628900207B3A /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 				E26F13801D42603A00207B3A /* AppDelegate.swift */,
 				E26F13821D42603A00207B3A /* ViewController.swift */,
 				E26F13841D42603A00207B3A /* Main.storyboard */,
+				E26F13A51D42628900207B3A /* ScaryBug.swift */,
 				E26F13921D42628900207B3A /* Icons */,
 				E26F13871D42603A00207B3A /* Assets.xcassets */,
 				E26F13891D42603A00207B3A /* LaunchScreen.storyboard */,
@@ -120,7 +121,6 @@
 		E26F13921D42628900207B3A /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				E26F13A51D42628900207B3A /* ScaryBug.swift */,
 				E26F13931D42628900207B3A /* attribution.txt */,
 				E26F13941D42628900207B3A /* bee.jpg */,
 				E26F13951D42628900207B3A /* beetle.jpg */,
