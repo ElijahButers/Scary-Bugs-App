@@ -51,7 +51,8 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
-        let bug = bugs[indexPath.row]
+        let bugSection = bugSections[indexPath.section]
+        let bug = bugSection.bugs[indexPath.row]
         cell.textLabel?.text = bug.name
         cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
         if let imageView = cell.imageView, let bugImage = bug.image {
