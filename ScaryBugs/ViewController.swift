@@ -58,5 +58,11 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        let bugSection = bugSections[section]
+        return ScaryBug.scaryFactorToString(scaryFactor: bugSection.howScary)
+    }
 }
 
