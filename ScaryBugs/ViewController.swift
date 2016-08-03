@@ -15,14 +15,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        bugs = ScaryBug.bugs()
+        //bugs = ScaryBug.bugs()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func setupBugs() {
+        
+        bugSections.append(BugSection(howScary: .NotScary))
+        bugSections.append(BugSection(howScary: .ALittleScary))
+        bugSections.append(BugSection(howScary: .AverageScary))
+        bugSections.append(BugSection(howScary: .QuiteScary))
+        bugSections.append(BugSection(howScary: .Aiiiiieeeee))
+        
+        let bugs = ScaryBug.bugs()
+        for bug: ScaryBug in bugs {
+            let bugSection = bugSections[bug.howScary.rawValue]
+            bugSection.bugs.append(bug)
+        }
+    }
 }
+
 
 extension ViewController: UITableViewDataSource {
     
