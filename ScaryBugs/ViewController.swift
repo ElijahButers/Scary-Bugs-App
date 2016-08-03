@@ -37,7 +37,7 @@ extension ViewController: UITableViewDataSource {
         let bug = bugs[indexPath.row]
         cell.textLabel?.text = bug.name
         cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
-        if let imageView = cell.imageView, bugImage = bug.image {
+        if let imageView = cell.imageView, let bugImage = bug.image {
             imageView.image = bugImage
         }
         return cell
