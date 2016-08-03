@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var bugs = [ScaryBug]()
+    var bugSections = [BugSection]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
