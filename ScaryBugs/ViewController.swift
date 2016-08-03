@@ -65,5 +65,10 @@ extension ViewController: UITableViewDataSource {
         let bugSection = bugSections[section]
         return ScaryBug.scaryFactorToString(scaryFactor: bugSection.howScary)
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return bugSections.count
+    }
 }
 
