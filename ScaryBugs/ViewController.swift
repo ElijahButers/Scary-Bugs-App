@@ -98,6 +98,16 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        
+        let bugSection = bugSections[indexPath.section]
+        if indexPath.row >= bugSection.bugs.count {
+            return .insert
+        } else {
+            return .delete
+        }
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
