@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.rightBarButtonItem = editButtonItem
         automaticallyAdjustsScrollViewInsets = false
+        tableView.allowsSelectionDuringEditing = true
         setupBugs()
     }
 
