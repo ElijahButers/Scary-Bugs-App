@@ -48,7 +48,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let adjustment = isEditing 1 : 0
+        let adjustment = isEditing ? 1 : 0
         let bugSection = bugSections[section]
         return  bugSection.bugs.count + adjustment
     }
@@ -57,11 +57,23 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
         let bugSection = bugSections[indexPath.section]
+        
+        if indexPath.row >= bugSection.bugs.count && isEditing {
+            cell.textLabel?.text = "Add Bug"
+            cell.detailTextLabel?.text = nil
+            cell.imageView?.image = nil
+        } else {
         let bug = bugSection.bugs[indexPath.row]
         cell.textLabel?.text = bug.name
         cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
-        if let imageView = cell.imageView, let bugImage = bug.image {
+        guard let imageView = cell.imageView else {
+            return cell
+        }
+        if let bugImage = bug.image {
             imageView.image = bugImage
+        } else {
+            imageView.image = nil
+            }
         }
         return cell
     }
