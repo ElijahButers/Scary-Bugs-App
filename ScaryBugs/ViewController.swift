@@ -48,8 +48,9 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        let adjustment = isEditing 1 : 0
         let bugSection = bugSections[section]
-        return  bugSection.bugs.count
+        return  bugSection.bugs.count + adjustment
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
