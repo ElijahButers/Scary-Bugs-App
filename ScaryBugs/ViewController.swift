@@ -141,6 +141,21 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         return true
     }
     
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        let sourceSection = bugSections[sourceIndexPath.section]
+        let destinationSection = bugSections[destinationIndexPath.section]
+        let bugToMove = sourceSection.bugs[sourceIndexPath.row]
+        
+        if sourceSection == destinationSection {
+            swap(&destinationSection.bugs[destinationIndexPath.row], &sourceSection.bugs[sourceIndexPath.row])
+        } else {
+            bugToMove.howScary = destinationSection.howScary
+            destinationSection.bugs.insert(bugToMove, at: destinationIndexPath.row)
+            sourceSection.bugs.remove(at: sourceIndexPath.row)
+        }
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
