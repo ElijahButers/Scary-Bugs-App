@@ -132,6 +132,15 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        
+        let bugSection = bugSections[indexPath.section]
+        if indexPath.row >= bugSection.bugs.count && isEditing {
+            return false
+        }
+        return true
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
