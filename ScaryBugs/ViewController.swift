@@ -163,6 +163,15 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        
+        let bugSection = bugSections[(proposedDestinationIndexPath as NSIndexPath).section]
+        if (proposedDestinationIndexPath as NSIndexPath).row >= bugSection.bugs.count {
+            return IndexPath(row: bugSection.bugs.count-1, section: (proposedDestinationIndexPath as NSIndexPath).section)
+        }
+        return  proposedDestinationIndexPath
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
