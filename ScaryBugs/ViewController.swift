@@ -153,6 +153,13 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
             bugToMove.howScary = destinationSection.howScary
             destinationSection.bugs.insert(bugToMove, at: destinationIndexPath.row)
             sourceSection.bugs.remove(at: sourceIndexPath.row)
+            
+            let delayInSeconds: Double = 0.2
+            let dispatchTime = Int64(delayInSeconds * Double(NSEC_PER_SEC))
+            let popTime = DispatchTime.now() + Double(dispatchTime) / Double(NSEC_PER_SEC)
+            DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
+                self.tableView.reloadRows(at: [destinationIndexPath], with: .none)
+            }
         }
     }
     
