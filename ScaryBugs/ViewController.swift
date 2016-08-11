@@ -143,16 +143,18 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         
-        let sourceSection = bugSections[sourceIndexPath.section]
-        let destinationSection = bugSections[destinationIndexPath.section]
-        let bugToMove = sourceSection.bugs[sourceIndexPath.row]
+        let sourceSection = bugSections[(sourceIndexPath as NSIndexPath).section]
+        let destinationSection = bugSections[(destinationIndexPath as NSIndexPath).section]
+        let bugToMove = sourceSection.bugs[(sourceIndexPath as NSIndexPath).row]
         
         if sourceSection == destinationSection {
-            swap(&destinationSection.bugs[destinationIndexPath.row], &sourceSection.bugs[sourceIndexPath.row])
+            if (destinationIndexPath as NSIndexPath).row != (sourceIndexPath as NSIndexPath).row {
+                swap(&destinationSection.bugs[(destinationIndexPath as NSIndexPath).row], &sourceSection.bugs[(sourceIndexPath as NSIndexPath).row])
+            }
         } else {
             bugToMove.howScary = destinationSection.howScary
-            destinationSection.bugs.insert(bugToMove, at: destinationIndexPath.row)
-            sourceSection.bugs.remove(at: sourceIndexPath.row)
+            destinationSection.bugs.insert(bugToMove, at: (destinationIndexPath as NSIndexPath).row)
+            sourceSection.bugs.remove(at: (sourceIndexPath as IndexPath).row)
             
             let delayInSeconds: Double = 0.2
             let dispatchTime = Int64(delayInSeconds * Double(NSEC_PER_SEC))
