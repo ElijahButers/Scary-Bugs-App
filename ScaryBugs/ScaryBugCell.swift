@@ -9,6 +9,10 @@
 import UIKit
 
 class ScaryBugCell: UITableViewCell {
+    
+    @IBOutlet weak var bugImageView: UIImageView!
+    @IBOutlet weak var bugNameLabel: UILabel!
+    @IBOutlet weak var howScaryImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
