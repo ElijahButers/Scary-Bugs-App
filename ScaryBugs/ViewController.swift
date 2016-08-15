@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         navigationItem.rightBarButtonItem = editButtonItem
         automaticallyAdjustsScrollViewInsets = false
         tableView.allowsSelectionDuringEditing = true
+        tableView.estimatedRowHeight = 60.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         setupBugs()
     }
 
