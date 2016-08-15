@@ -56,26 +56,33 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
+        let cell: UITableViewCell
         let bugSection = bugSections[indexPath.section]
         
         if indexPath.row >= bugSection.bugs.count && isEditing {
+            cell = tableView.dequeueReusableCell(withIdentifier: "NewRowCell", for: indexPath)
             cell.textLabel?.text = "Add Bug"
             cell.detailTextLabel?.text = nil
             cell.imageView?.image = nil
         } else {
         let bug = bugSection.bugs[indexPath.row]
-        cell.textLabel?.text = bug.name
-        cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
-        guard let imageView = cell.imageView else {
-            return cell
-        }
-        if let bugImage = bug.image {
-            imageView.image = bugImage
-        } else {
-            imageView.image = nil
+        cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
+            
+        if let bugCell = cell as? ScaryBugCell {
+            bugCell.bugNameLabel.text = bug.name
+            if bug.howScary.rawValue > ScaryFactor.AverageScary.rawValue {
+                bugCell.howScaryImageView.image = UIImage(named: "shockedface2_full")
+            } else {
+                bugCell.howScaryImageView.image = UIImage(named: "shockedface2_empty")
+            }
+        
+            if let bugImage = bug.image {
+                bugCell.bugImageView.image = bugImage
+            } else {
+                bugCell.bugImageView.image = nil
             }
         }
+    }
         return cell
     }
     
