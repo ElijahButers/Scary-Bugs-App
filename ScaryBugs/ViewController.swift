@@ -204,5 +204,18 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
             tableView.setEditing(false, animated: true)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "GoToEdit" {
+            if let editContoller = segue.destination as? EditTableViewController {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    let bugSection = bugSections[indexPath.section]
+                    let bug = bugSection.bugs[indexPath.row]
+                    editContoller.bug = bug
+                }
+            }
+        }
+    }
 }
 
