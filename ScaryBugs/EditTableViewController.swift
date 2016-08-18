@@ -15,6 +15,19 @@ class EditTableViewController: UITableViewController {
     @IBOutlet weak var bugRatingLabel: UILabel!
     
     var bug: ScaryBug?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let bug = bug else {
+            return
+        }
+        if let bugImage = bug.image {
+            bugImageView.image = bugImage
+        }
+        bugNameTextField.text = bug.name
+        bugRatingLabel.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
