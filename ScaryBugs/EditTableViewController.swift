@@ -74,4 +74,14 @@ extension EditTableViewController: UITextFieldDelegate, UIImagePickerControllerD
         tableView.resignFirstResponder()
         return true
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            
+            bug?.image = image
+            bugImageView.image = image
+            dismiss(animated: true, completion: nil)
+        }
+    }
 }
