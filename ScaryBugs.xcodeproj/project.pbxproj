@@ -40,6 +40,7 @@
 		E26F13C61D42628900207B3A /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26F13AC1D42628900207B3A /* wolfSpider.jpg */; };
 		E2B210CE1D52289D0074255C /* BugSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B210CD1D52289D0074255C /* BugSection.swift */; };
 		E2D049B31D61E04C00AFDBB0 /* ScaryBugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D049B21D61E04C00AFDBB0 /* ScaryBugCell.swift */; };
+		E2F765CF1D65D09900B41089 /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F765CE1D65D09900B41089 /* EditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		E26F13AC1D42628900207B3A /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
 		E2B210CD1D52289D0074255C /* BugSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugSection.swift; sourceTree = "<group>"; };
 		E2D049B21D61E04C00AFDBB0 /* ScaryBugCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugCell.swift; sourceTree = "<group>"; };
+		E2F765CE1D65D09900B41089 /* EditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				E26F13821D42603A00207B3A /* ViewController.swift */,
 				E2B210CD1D52289D0074255C /* BugSection.swift */,
 				E26F13841D42603A00207B3A /* Main.storyboard */,
+				E2F765CE1D65D09900B41089 /* EditTableViewController.swift */,
 				E2D049B21D61E04C00AFDBB0 /* ScaryBugCell.swift */,
 				E26F13A51D42628900207B3A /* ScaryBug.swift */,
 				E26F13921D42628900207B3A /* Icons */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26F13831D42603A00207B3A /* ViewController.swift in Sources */,
+				E2F765CF1D65D09900B41089 /* EditTableViewController.swift in Sources */,
 				E26F13811D42603A00207B3A /* AppDelegate.swift in Sources */,
 				E2B210CE1D52289D0074255C /* BugSection.swift in Sources */,
 				E26F13BF1D42628900207B3A /* ScaryBug.swift in Sources */,
