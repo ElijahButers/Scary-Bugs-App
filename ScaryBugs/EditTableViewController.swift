@@ -66,3 +66,7 @@ class EditTableViewController: UITableViewController {
         }
     }
 }
+
+extension EditTableViewController: UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+}
