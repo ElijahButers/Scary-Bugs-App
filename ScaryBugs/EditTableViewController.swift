@@ -13,6 +13,8 @@ class EditTableViewController: UITableViewController {
     @IBOutlet weak var bugImageView: UIImageView!
     @IBOutlet weak var bugNameTextField: UITextField!
     @IBOutlet weak var bugRatingLabel: UILabel!
+    
+    var bug: ScaryBug?
 
     override func viewDidLoad() {
         super.viewDidLoad()
