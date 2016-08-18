@@ -213,6 +213,11 @@
                             <outlet property="delegate" destination="rAc-6S-xYj" id="Fum-aZ-NtG"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="bugImageView" destination="A56-VZ-6eZ" id="Jrd-iG-VhC"/>
+                        <outlet property="bugNameTextField" destination="d87-is-zSd" id="aJ5-Ht-1WE"/>
+                        <outlet property="bugRatingLabel" destination="cWq-of-SDN" id="cGq-dw-3dL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T2-SK-bxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
