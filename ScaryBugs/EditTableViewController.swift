@@ -53,4 +53,16 @@ class EditTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 && indexPath.section == 0 {
+            tableView.deselectRow(at: indexPath, animated: true)
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.allowsEditing = false
+            picker.delegate = self
+            present(picker, animated: true, completion: nil)
+            
+        }
+    }
 }
