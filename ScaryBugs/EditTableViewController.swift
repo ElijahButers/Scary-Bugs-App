@@ -69,4 +69,9 @@ class EditTableViewController: UITableViewController {
 
 extension EditTableViewController: UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        tableView.resignFirstResponder()
+        return true
+    }
 }
