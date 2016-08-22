@@ -11,6 +11,11 @@ import UIKit
 class RatingTableViewController: UITableViewController {
     
     var bug: ScaryBug?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        refresh()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
