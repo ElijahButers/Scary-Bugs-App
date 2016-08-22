@@ -205,7 +205,7 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "GoToEdit" {
             if let editContoller = segue.destination as? EditTableViewController {
