@@ -205,7 +205,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1ZP-3E-VDX" kind="show" id="UQg-xA-t4e"/>
+                                            <segue destination="1ZP-3E-VDX" kind="show" identifier="GoToHowScary" id="UQg-xA-t4e"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
