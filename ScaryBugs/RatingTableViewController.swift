@@ -26,6 +26,15 @@ class RatingTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func refresh() {
+        
+        for index in 0...ScaryFactor.totalBugs.rawValue {
+            let indexPath = IndexPath(row: index, section: 0)
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = bug?.howScary.rawValue == index ? .checkmark : .none
+        }
+    }
 
     // MARK: - Table view data source
 
