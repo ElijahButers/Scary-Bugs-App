@@ -9,6 +9,8 @@
 import UIKit
 
 class RatingTableViewController: UITableViewController {
+    
+    var bug: ScaryBug?
 
     override func viewDidLoad() {
         super.viewDidLoad()
