@@ -14,6 +14,7 @@ enum ScaryFactor: Int {
     case averageScary
     case quiteScary
     case aiiiiieeeee
+    case totalBugs
 }
 
 class ScaryBug {
@@ -45,6 +46,8 @@ class ScaryBug {
         scaryString = "Quite scary"
     case .aiiiiieeeee:
         scaryString = "AIIIIIEEEEEEE!!"
+    case .totalBugs:
+        scaryString = ""
     }
     return scaryString
   }
