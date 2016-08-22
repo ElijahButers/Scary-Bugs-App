@@ -42,5 +42,14 @@ class RatingTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let scaryFactor = ScaryFactor(rawValue: indexPath.row) {
+            bug?.howScary = scaryFactor
+        }
+        refresh()
+    }
 
 }
