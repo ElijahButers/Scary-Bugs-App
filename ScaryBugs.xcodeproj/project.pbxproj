@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2084B791D6B5B0300DA1937 /* RatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2084B781D6B5B0300DA1937 /* RatingTableViewController.swift */; };
 		E26F13811D42603A00207B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F13801D42603A00207B3A /* AppDelegate.swift */; };
 		E26F13831D42603A00207B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F13821D42603A00207B3A /* ViewController.swift */; };
 		E26F13861D42603A00207B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26F13841D42603A00207B3A /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2084B781D6B5B0300DA1937 /* RatingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewController.swift; sourceTree = "<group>"; };
 		E26F137D1D42603A00207B3A /* ScaryBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F13801D42603A00207B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26F13821D42603A00207B3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				E26F13821D42603A00207B3A /* ViewController.swift */,
 				E2B210CD1D52289D0074255C /* BugSection.swift */,
 				E26F13841D42603A00207B3A /* Main.storyboard */,
+				E2084B781D6B5B0300DA1937 /* RatingTableViewController.swift */,
 				E2F765CE1D65D09900B41089 /* EditTableViewController.swift */,
 				E2D049B21D61E04C00AFDBB0 /* ScaryBugCell.swift */,
 				E26F13A51D42628900207B3A /* ScaryBug.swift */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26F13831D42603A00207B3A /* ViewController.swift in Sources */,
+				E2084B791D6B5B0300DA1937 /* RatingTableViewController.swift in Sources */,
 				E2F765CF1D65D09900B41089 /* EditTableViewController.swift in Sources */,
 				E26F13811D42603A00207B3A /* AppDelegate.swift in Sources */,
 				E2B210CE1D52289D0074255C /* BugSection.swift in Sources */,
