@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     
     private func setupBugs() {
         
-        bugSections.append(BugSection(howScary: .NotScary))
-        bugSections.append(BugSection(howScary: .ALittleScary))
-        bugSections.append(BugSection(howScary: .AverageScary))
-        bugSections.append(BugSection(howScary: .QuiteScary))
-        bugSections.append(BugSection(howScary: .Aiiiiieeeee))
+        bugSections.append(BugSection(howScary: .notScary))
+        bugSections.append(BugSection(howScary: .aLittleScary))
+        bugSections.append(BugSection(howScary: .averageScary))
+        bugSections.append(BugSection(howScary: .quiteScary))
+        bugSections.append(BugSection(howScary: .aiiiiieeeee))
         
         let bugs = ScaryBug.bugs()
         for bug: ScaryBug in bugs {
@@ -72,7 +72,7 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
             
         if let bugCell = cell as? ScaryBugCell {
             bugCell.bugNameLabel.text = bug.name
-            if bug.howScary.rawValue > ScaryFactor.AverageScary.rawValue {
+            if bug.howScary.rawValue > ScaryFactor.averageScary.rawValue {
                 bugCell.howScaryImageView.image = UIImage(named: "shockedface2_full")
             } else {
                 bugCell.howScaryImageView.image = UIImage(named: "shockedface2_empty")

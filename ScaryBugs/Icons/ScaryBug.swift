@@ -9,11 +9,11 @@
 import UIKit
 
 enum ScaryFactor: Int {
-  case NotScary
-  case ALittleScary
-  case AverageScary
-  case QuiteScary
-  case Aiiiiieeeee
+    case notScary
+    case aLittleScary
+    case averageScary
+    case quiteScary
+    case aiiiiieeeee
 }
 
 class ScaryBug {
@@ -30,21 +30,20 @@ class ScaryBug {
         self.image = image
       }
     }
-
   }
   
   static func scaryFactorToString(scaryFactor:ScaryFactor) -> String {
     var scaryString = ""
     switch(scaryFactor) {
-      case .NotScary:
+      case .notScary:
         scaryString = "Not scary"
-    case .ALittleScary:
+    case .aLittleScary:
         scaryString = "A little scary"
-    case .AverageScary:
+    case .averageScary:
         scaryString = "Average scariness"
-    case .QuiteScary:
+    case .quiteScary:
         scaryString = "Quite scary"
-    case .Aiiiiieeeee:
+    case .aiiiiieeeee:
         scaryString = "AIIIIIEEEEEEE!!"
     }
     return scaryString
@@ -52,29 +51,29 @@ class ScaryBug {
   
   static func bugs() -> [ScaryBug] {
     var bugs = [ScaryBug]()
-    bugs.append(ScaryBug(withName: "Centipede", imageName: "centipede.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Ladybug", imageName: "ladybug.jpg", howScary: .NotScary))
-    bugs.append(ScaryBug(withName: "Potato Bug", imageName: "potatoBug.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Wolf Spider", imageName: "wolfSpider.jpg", howScary: .Aiiiiieeeee))
-    bugs.append(ScaryBug(withName: "Bee", imageName: "bee.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Beetle", imageName: "beetle.jpg", howScary: .ALittleScary))
-    bugs.append(ScaryBug(withName: "Burrito Insect", imageName: "burritoInsect.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Caterpillar", imageName: "caterpillar.jpg", howScary: .NotScary))
-    bugs.append(ScaryBug(withName: "Cicada", imageName: "cicada.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Cockroach", imageName: "cockroach.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Exoskeleton", imageName: "exoskeleton.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Fly", imageName: "fly.jpg", howScary: .NotScary))
-    bugs.append(ScaryBug(withName: "Giant Moth", imageName: "giantMoth.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Grasshopper", imageName: "grasshopper.jpg", howScary: .Aiiiiieeeee))
-    bugs.append(ScaryBug(withName: "Mosquito", imageName: "mosquito.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Praying Mantis", imageName: "prayingMantis.jpg", howScary: .NotScary))
-    bugs.append(ScaryBug(withName: "Roach", imageName: "roach.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Robber Fly", imageName: "robberFly.jpg", howScary: .QuiteScary))
-    bugs.append(ScaryBug(withName: "Scorpion", imageName: "scorpion.jpg", howScary: .Aiiiiieeeee))
-    bugs.append(ScaryBug(withName: "Shield Bug", imageName: "shieldBug.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Stag Beetle", imageName: "stagBeetle.jpg", howScary: .AverageScary))
-    bugs.append(ScaryBug(withName: "Stink Bug", imageName: "stinkbug.jpg", howScary: .ALittleScary))
+    bugs.append(ScaryBug(withName: "Centipede", imageName: "centipede.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Ladybug", imageName: "ladybug.jpg", howScary: .notScary))
+    bugs.append(ScaryBug(withName: "Potato Bug", imageName: "potatoBug.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Wolf Spider", imageName: "wolfSpider.jpg", howScary: .aiiiiieeeee))
+    bugs.append(ScaryBug(withName: "Bee", imageName: "bee.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Beetle", imageName: "beetle.jpg", howScary: .aLittleScary))
+    bugs.append(ScaryBug(withName: "Burrito Insect", imageName: "burritoInsect.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Caterpillar", imageName: "caterpillar.jpg", howScary: .notScary))
+    bugs.append(ScaryBug(withName: "Cicada", imageName: "cicada.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Cockroach", imageName: "cockroach.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Exoskeleton", imageName: "exoskeleton.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Fly", imageName: "fly.jpg", howScary: .notScary))
+    bugs.append(ScaryBug(withName: "Giant Moth", imageName: "giantMoth.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Grasshopper", imageName: "grasshopper.jpg", howScary: .aiiiiieeeee))
+    bugs.append(ScaryBug(withName: "Mosquito", imageName: "mosquito.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Praying Mantis", imageName: "prayingMantis.jpg", howScary: .notScary))
+    bugs.append(ScaryBug(withName: "Roach", imageName: "roach.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Robber Fly", imageName: "robberFly.jpg", howScary: .quiteScary))
+    bugs.append(ScaryBug(withName: "Scorpion", imageName: "scorpion.jpg", howScary: .aiiiiieeeee))
+    bugs.append(ScaryBug(withName: "Shield Bug", imageName: "shieldBug.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Stag Beetle", imageName: "stagBeetle.jpg", howScary: .averageScary))
+    bugs.append(ScaryBug(withName: "Stink Bug", imageName: "stinkbug.jpg", howScary: .aLittleScary))
     return bugs
   }
-  
+
 }
