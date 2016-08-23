@@ -13,6 +13,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var bugSections = [BugSection]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        for index in 0...bugSections.count-1 {
+            let section = bugSections[index]
+            var counter = 0
+            while counter < section.bugs.count {
+                let bug = section.bugs[counter]
+                if bug.howScary.rawValue != index {
+                    section.bugs.remove(at: counter)
+                    let newSection = bugSections[bug.howScary.rawValue]
+                    newSection.bugs.append(bug)
+                } else {
+                    counter += 1
+                }
+            }
+        }
+        tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
