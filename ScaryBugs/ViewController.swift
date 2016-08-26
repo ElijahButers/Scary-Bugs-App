@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var bugSections: [[ScaryBug?]?]!
+    var allSections: [[ScaryBug?]?]!
     
     override func viewWillAppear(_ animated: Bool) {
         
