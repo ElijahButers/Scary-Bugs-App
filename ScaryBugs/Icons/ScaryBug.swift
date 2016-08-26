@@ -78,5 +78,8 @@ class ScaryBug: NSObject, Comparable {
     bugs.append(ScaryBug(withName: "Stink Bug", imageName: "stinkbug.jpg", howScary: .aLittleScary))
     return bugs
   }
+}
 
+func < (lhs: ScaryBug, rhs: ScaryBug) -> Bool {
+    return lhs.name < rhs.name
 }
