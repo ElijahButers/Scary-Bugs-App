@@ -17,7 +17,7 @@ enum ScaryFactor: Int {
     case totalBugs
 }
 
-class ScaryBug {
+class ScaryBug: NSObject, Comparable {
   
   var name: String
   var image: UIImage?
