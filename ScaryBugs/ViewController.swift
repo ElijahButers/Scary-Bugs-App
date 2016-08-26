@@ -53,6 +53,18 @@ class ViewController: UIViewController {
         
         let sectionTitlesCount = UILocalizedIndexedCollation.current().sectionTitles.count
         allSections = [[ScaryBug?]?](repeating: nil, count: sectionTitlesCount)
+        
+        let bugs = ScaryBug.bugs()
+        for bug in bugs {
+            let collation = UILocalizedIndexedCollation.current()
+            let sectionNumber = collation.section(for: bug, collationStringSelector: #selector(getter: UIDevice.name))
+            if allSections[sectionNumber] == nil {
+                allSections[sectionNumber] = [ScaryBug?]()
+            }
+            allSections[sectionNumber]!.append(bug)
+            let bugSection = bugSections[bug.howScary.rawValue]
+            bugSection.bugs.append(bug)
+        }
     }
 }
 
