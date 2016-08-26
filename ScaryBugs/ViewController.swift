@@ -51,6 +51,9 @@ class ViewController: UIViewController {
     
     private func setupBugs() {
         
+        let sectionTitlesCount = UILocalizedIndexedCollation.current().sectionTitles.count
+        allSections = [[ScaryBug?]?](repeating: nil, count: sectionTitlesCount)
+        
         bugSections.append(BugSection(howScary: .notScary))
         bugSections.append(BugSection(howScary: .aLittleScary))
         bugSections.append(BugSection(howScary: .averageScary))
