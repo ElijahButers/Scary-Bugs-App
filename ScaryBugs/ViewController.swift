@@ -8,6 +8,18 @@
 
 import UIKit
 
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l < r
+    case (nil, _?):
+        return true
+    default:
+        return false
+    }
+}
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -66,7 +78,7 @@ class ViewController: UIViewController {
         for index in 0 ... sectionTitlesCount {
             let bugs = allSections[index]
             if let bugs = bugs {
-                allSections[index] = bugs.sorted(<)
+                allSections[index] = bugs.sorted(by:<)
             }
         }
     }
