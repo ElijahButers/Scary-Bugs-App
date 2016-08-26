@@ -61,15 +61,12 @@ class ViewController: UIViewController {
             if allSections[sectionNumber] == nil {
                 allSections[sectionNumber] = [ScaryBug?]()
             }
-            allSections[sectionNumber]!.append(bug)
-            let bugSection = bugSections[bug.howScary.rawValue]
-            bugSection.bugs.append(bug)
         }
         
-        for index in 0 ... sectionTitleCount {
+        for index in 0 ... sectionTitlesCount {
             let bugs = allSections[index]
             if let bugs = bugs {
-                allSections[index] = bug.sort(<)
+                allSections[index] = bugs.sorted(<)
             }
         }
     }
