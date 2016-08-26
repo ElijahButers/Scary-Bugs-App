@@ -65,7 +65,16 @@ class ViewController: UIViewController {
             let bugSection = bugSections[bug.howScary.rawValue]
             bugSection.bugs.append(bug)
         }
+        
+        for index in 0 ... sectionTitleCount {
+            let bugs = allSections[index]
+            if let bugs = bugs {
+                allSections[index] = bug.sort(<)
+            }
+        }
     }
+    
+    
 }
 
 
