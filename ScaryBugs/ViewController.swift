@@ -172,8 +172,8 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         
-        let bugSection = bugSections[indexPath.section]
-        if indexPath.row >= bugSection.bugs.count && isEditing {
+        let bugSection = allSections[(indexPath as NSIndexPath).section]!
+        if indexPath.row >= allSections.count && isEditing {
             return false
         }
         return true
