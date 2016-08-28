@@ -136,14 +136,9 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            let bugSection = bugSections[indexPath.section]
-            bugSection.bugs.remove(at: indexPath.row)
+            var bugSection = allSections[(indexPath as NSIndexPath).section]!
+            bugSection.remove(at: (indexPath as NSIndexPath).row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-        } else if editingStyle == .insert {
-            let bugSection = bugSections[indexPath.section]
-            let newBug = ScaryBug(withName: "New Bug", imageName: nil, howScary: bugSection.howScary)
-            bugSection.bugs.append(newBug)
-            tableView.insertRows(at: [indexPath], with: .automatic)
         }
     }
     
