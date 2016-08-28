@@ -181,9 +181,9 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         
-        let bugSection = bugSections[(proposedDestinationIndexPath as NSIndexPath).section]
-        if (proposedDestinationIndexPath as NSIndexPath).row >= bugSection.bugs.count {
-            return IndexPath(row: bugSection.bugs.count-1, section: (proposedDestinationIndexPath as NSIndexPath).section)
+        let bugSection = allSections[(proposedDestinationIndexPath as NSIndexPath).section]!
+        if (proposedDestinationIndexPath as NSIndexPath).row >= bugSection.count {
+            return IndexPath(row: bugSection.count-1, section: (proposedDestinationIndexPath as NSIndexPath).section)
         }
         return  proposedDestinationIndexPath
     }
