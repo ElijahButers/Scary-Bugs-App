@@ -164,8 +164,8 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-        let bugSection = bugSections[indexPath.section]
-        if indexPath.row >= bugSection.bugs.count && isEditing {
+        let bugSection = allSections[(indexPath as NSIndexPath).section]!
+        if (indexPath as NSIndexPath).row >= bugSection.count && isEditing {
             self.tableView(tableView, commit: .insert, forRowAt: indexPath)
         }
     }
