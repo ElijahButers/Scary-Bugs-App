@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var allSections: [[ScaryBug?]?]!
-    
+    /*
     override func viewWillAppear(_ animated: Bool) {
         
         for index in 0...bugSections.count-1 {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             }
         }
         tableView.reloadData()
-    }
+    } */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -227,20 +227,8 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         super.setEditing(editing, animated: animated)
         
         if editing {
-            tableView.beginUpdates()
-            for (index, bugSection) in bugSections.enumerated() {
-                let indexPath = IndexPath(row: bugSection.bugs.count, section: index)
-                tableView.insertRows(at: [indexPath], with: .automatic)
-            }
-            tableView.endUpdates()
             tableView.setEditing(true, animated: true)
         } else {
-            tableView.beginUpdates()
-            for (index, bugSection) in bugSections.enumerated() {
-                let indexPath = IndexPath(row: bugSection.bugs.count, section: index)
-                tableView.deleteRows(at: [indexPath], with: .automatic)
-            }
-            tableView.endUpdates()
             tableView.setEditing(false, animated: true)
         }
     }
