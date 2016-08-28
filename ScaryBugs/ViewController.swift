@@ -125,8 +125,7 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        let bugSection = bugSections[section]
-        return ScaryBug.scaryFactorToString(scaryFactor: bugSection.howScary)
+        return UILocalizedIndexedCollation.current().sectionIndexTitles[section]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
