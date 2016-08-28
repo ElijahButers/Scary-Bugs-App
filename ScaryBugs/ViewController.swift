@@ -154,8 +154,8 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         
-        let bugSection = bugSections[indexPath.section]
-        if isEditing && indexPath.row  < bugSection.bugs.count {
+        let bugSection = allSections[(indexPath as NSIndexPath).section]!
+        if isEditing && (indexPath as IndexPath).row < bugSection.count {
             return nil
         }
         return indexPath
