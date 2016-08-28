@@ -130,7 +130,7 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return bugSections.count
+        return allSections.count
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
