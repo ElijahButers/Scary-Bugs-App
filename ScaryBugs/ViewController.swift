@@ -201,11 +201,11 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "GoToEdit" {
-            if let editContoller = segue.destination as? EditTableViewController {
+            if let editController = segue.destination as? EditTableViewController {
                 if let indexPath = tableView.indexPathForSelectedRow {
-                    let bugSection = bugSections[indexPath.section]
-                    let bug = bugSection.bugs[indexPath.row]
-                    editContoller.bug = bug
+                    let bugSection = allSections[(indexPath as NSIndexPath).section]!
+                    let bug = bugSection[(indexPath as NSIndexPath).row]
+                    editController.bug = bug
                 }
             }
         }
