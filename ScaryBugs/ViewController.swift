@@ -101,15 +101,9 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell
-        let bugSection = bugSections[indexPath.section]
+        let bugSection = allSections[(indexPath as NSIndexPath).section]!
         
-        if indexPath.row >= bugSection.bugs.count && isEditing {
-            cell = tableView.dequeueReusableCell(withIdentifier: "NewRowCell", for: indexPath)
-            cell.textLabel?.text = "Add Bug"
-            cell.detailTextLabel?.text = nil
-            cell.imageView?.image = nil
-        } else {
-        let bug = bugSection.bugs[indexPath.row]
+        let bug = bugSection[(indexPath as NSIndexPath).row]!
         cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath)
             
         if let bugCell = cell as? ScaryBugCell {
@@ -124,7 +118,6 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
                 bugCell.bugImageView.image = bugImage
             } else {
                 bugCell.bugImageView.image = nil
-            }
         }
     }
         return cell
