@@ -144,8 +144,8 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         
-        let bugSection = bugSections[indexPath.section]
-        if indexPath.row >= bugSection.bugs.count {
+        let bugSection = allSections[(indexPath as NSIndexPath).section]!
+        if (indexPath as NSIndexPath).row >= bugSection.count {
             return .insert
         } else {
             return .delete
