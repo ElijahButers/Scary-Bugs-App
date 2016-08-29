@@ -216,5 +216,10 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
         
         return UILocalizedIndexedCollation.current().sectionIndexTitles
     }
+    
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        
+        return UILocalizedIndexedCollation.current().section(forSectionIndexTitle: index)
+    }
 }
 
