@@ -211,5 +211,10 @@ extension ViewController: UITableViewDataSource,  UITableViewDelegate {
             }
         }
     }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        
+        return UILocalizedIndexedCollation.current().sectionIndexTitles
+    }
 }
 
